@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.navbar{
+    height: auto;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+hr{
+    width: calc( 1.5vmin + 200px);
+    margin-bottom: 10px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    height: 60px;
+}
+
+.open-nav-button{
+    display: none;
+}
+
+.menu-right-nav{
+    margin-right: 20px;
+}
+
+ul.nav-links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.links-main li{
+    display: inline-block;
+    margin: 0;
+}
+
+.nav-links a{
+    padding: 20px;
+}
+
+.logo-left-nav{
+    margin-left: 20px;
+}
+
+.links-small{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smaller-screen-nav{
+    display: none;
+    height: 100px;
+}
+
+.flex-perfect-centering-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-grid-container{
+    display: grid;
+    grid-template-rows: repeat(7,auto);
+}
+
+.parallax-scrolling{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home{
+    background-image: url(../images/canva_mountain_and_water.jpg);
+    background-attachment: scroll;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.text-container{
+    width: 100vw;
+    max-width: 100%;
+    max-height: 90vh;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+.inspiring-quote-section{
+    width: 100vw;
+    max-width: 100%;
+    height: 70vh;
+}
+
+.inspiring-quote-section p{
+    padding-left: 8vw;
+    padding-right: 8vw; 
+}
+
+.padding-bottom *{
+    padding-bottom: 5vh;
+}
+
+.social-media-plug{
+    width: 100vw;
+    max-width: 100%;
+    height: 40vh;
+    align-items: flex-start;
+    padding-left: 15vw;
+}
+
+.popular-tours{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.popular-tours-header{
+    height: 15vh;
+}
+
+.tour-item{
+    height: 70vh;
+}
+
+.tour-item a{
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.tour-item a:hover{
+    background-color: white;
+    color: black;
+    transition:  .2s ease-in;
+}
+
+.nepal{
+    background-image: url(../images/canva_nepal_two.jpg);
+}
+
+.antelope-canyon{
+    background-image: url(../images/canva_grand_canyon.jpg);
+}
+
+.sierra-nevada{
+    background-image: url(../images/sierra_nevada.jpg);
+}
+
+.book-now{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.book-image{
+    background-image: url(../images/canva_man_on_mountain.jpg);
+    height: 80vh;
+    width: 50%;
+    background-attachment: scroll;
+}
+
+.book-info{
+    text-align: center;
+    width: 50%;
+}
+
+.book-info h6{
+    width: 60%;
+}
+
+.newsletter{
+    width: 100vw;
+    height: 80vh;
+}
+
+.landing-footer{
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.social-updates{
+    margin: 50px 8vw 50px 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+.latest-updates li{
+    width: 15vw;
+}
+
+.social-links{
+    margin: 0 8vw 0 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.link-icons{
+    display: flex;
+}
+
+.link-icons *{
+    margin-right: 15px;
+}
+
+#top{
+    padding: 5px 20px 5px 20px;
+    border: 2px solid gray;
+    color: gray;
+}
+
+#top:hover {
+    border-color: white;
+    color: white;
+    transition: 0.13s ease-in;
+}
+
+.tour-name, .explore-header{
+    background-attachment: scroll;
+}
+
+@media screen and (max-width: 1000px){
+    .menu-right-nav{
+        display: none;
+    }
+
+    .open-nav-button{
+        all: unset;
+        margin-right: 20px;
+    }
+
+    .book-now{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .book-image{
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .book-info{
+        width: 100vw;
+        max-width: 100%;
+        align-items: flex-start;
+        margin-left: 5vw;
+        margin-top: 60px;
+        text-align: unset;
+    }
+
+    .book-info h6{
+        margin-right: 30px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .newsletter form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .newsletter input[type = email], .newsletter input[type = submit]{
+        width: 90vw;
+    }
+
+    .social-updates{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .latest-updates li{
+        width: 80vw;
+    }
+
+    .recent-posts, .latest-updates{
+        padding-bottom: 5vh;
+    }
+}
+
+

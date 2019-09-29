@@ -1,0 +1,67 @@
+.container-tour-search{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.explore-header{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/canva_male_hiker_exploring.jpg);
+    color: white;
+}
+
+.tour-options{
+    width: 100vw;
+    background-color: rgb(152,251,152);
+}
+
+.tour-content{
+    margin: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: minmax(250px,auto);
+    grid-gap: 10px;
+}
+
+.tour-search-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    color: white;
+}
+
+
+.tour-search-item:hover{
+    opacity: 0.6;
+}
+
+
+.find-a-tour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-search-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+input{
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+}
+
+input[type = submit]{
+    background-color: green;
+    border: none;
+    margin-left: 15px;
+}

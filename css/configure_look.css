@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Pontano+Sans|Oswald&display=swap');
+
+:root{
+    --text-color-nav: rgb(255,255,255);
+}
+
+*{
+    font-family: 'Ponto Sans', sans-serif;
+}
+
+.text-container{
+    font-size: calc(1.5vmin + 12px);
+}
+
+.recent-posts ul{
+    list-style-type: none;
+}
+
+.recent-posts li{
+    margin: 0 0 3px 0;
+}
+
+h2{
+    font-size: calc( 1.5vmax + 20px);
+    font-family: 'Oswald', sans-serif;
+}
+
+h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+.home h1{
+    font-family: "Kaushan Script", cursive;
+    font-size: calc( 3.5vmax + 24px);
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-links a{
+    font-size: 17px;
+    color: var(--text-color-nav);
+}
+
+.navbar{
+    color: var(--text-color-nav);
+    background-color: rgba(red, green, blue, 0);
+}
+
+.home{
+    color: white;
+}
+
+.social-media-plug{
+    background-color: rgba(105,105,105, 0.1)
+}
+
+.text-white{
+    color: white;
+}
+
+.text-white a{
+    color: white;
+}
+
+.book-info ul, .book-info h6{
+    color: rgb(105, 105, 105);
+}
+
+.book-info  a{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.book-info a:hover{
+    opacity: 0.6;
+    transition: 0.2s ease-in;
+}
+
+.newsletter{
+    background-color: rgb(107, 142, 35);
+}
+
+.newsletter h1{
+    font-family: "Kaushan Script", cursive;
+    font-size: calc( 3.5vmax + 24px);   
+}
+
+.newsletter input[type = email], .newsletter input[type = submit]{
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.newsletter input[type = email]{
+    color: white;
+    background-color: rgb(107, 142, 35);
+}
+
+.newsletter input[type=email]::placeholder{
+    color: white;
+}
+
+.newsletter input[type = submit]{
+    color:rgb(107, 142, 35);
+    background-color: white;
+}
